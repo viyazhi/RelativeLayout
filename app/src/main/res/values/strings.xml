@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RelativeLayout</string>
+    <string name="DCA">DCA</string>
+    <string name="MARS">MARS</string>
+    <string name="dca">DCA</string>
+    <string name="mars">MARS</string>
+    <string name="flights">Flights</string>
+    <string name="switch_text">One Way</string>
+    <string name="traveller">1 Traveller</string>
+</resources>

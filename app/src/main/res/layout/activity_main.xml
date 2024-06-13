@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:elevation="10dp"
+        android:src="@drawable/icarrow"
+        android:layout_centerInParent="true"
+        android:id="@+id/arrow"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dca"
+        android:text="@string/DCA"
+        android:layout_centerVertical="true"
+        android:elevation="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/arrow"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MARS"
+        android:layout_toEndOf="@+id/arrow"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:textSize="30sp"
+        android:id="@+id/mar"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icspacestation"
+        android:layout_above="@+id/dca"/>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/arrow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/icflight" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/mar"
+        android:layout_marginStart="262dp"
+        android:text="Rover"
+        android:src="@drawable/icrover" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="one way"
+        android:textSize="20sp"
+        android:id="@+id/a"
+        android:layout_below="@id/dca"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/traveller"
+        android:layout_below="@id/a"
+        />
+
+
+</RelativeLayout>
